@@ -1,0 +1,42 @@
+.summary-box {
+    background-color: #323232; /* Adjust the color to match the screenshot */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Drop shadow */
+    padding: 16px; /* Padding around the content */
+    margin: 16px; /* Margin around the component */
+    width: 300px; /* Adjust the width as needed */
+    float: right;
+  }
+  
+  .summary-box h2 {
+    font-size: 1.2em; /* Title font size */
+    margin-bottom: 8px; /* Space below the title */
+    color: #fff;
+  }
+  
+  .summary-box ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .summary-box li {
+    margin-bottom: 4px; /* Space between list items */
+    font-size: 1em; /* List item font size */
+    color: #fff;
+  }
+
+  .summary-list {
+    background-color: #252525;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px; /* Add margin bottom */
+  }
+
+  .summary-button {
+    background-color: #252525;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+
+  

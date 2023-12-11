@@ -1,0 +1,22 @@
+.ask-button-container {
+    display: flex;
+    justify-content: center;
+    margin: 16px;
+  }
+  
+  .ask-button {
+    background-color: #ffffff; /* Green background */
+    color: black; /* White text */
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* No border */
+    border-radius: 25px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+    transition: background-color 0.3s; /* Transition for interactive feedback */
+  }
+  
+  .ask-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  

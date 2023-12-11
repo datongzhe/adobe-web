@@ -1,0 +1,20 @@
+.App-header {
+    background-color: #323232;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+.Header-logo {
+    width: 50px;
+    height: 50px;
+    justify-self: start;
+    margin-left: 3%;
+}
+
+.vertical-line {
+    width: 1px; /* This sets the width of the line to be 1px */
+    height: 50px; /* Adjust the height as needed */
+    background-color: #585252; /* This sets the line color to black */
+    margin-left: 1%; /* This adds some space on the left and right of the line */
+  }
