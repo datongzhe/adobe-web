@@ -19,6 +19,15 @@ const recommendations = [
   'Graphical_Data_Analysis_with_R'
 ]
 
+const recommendations2 = [
+  "Rubin - Comments on Causal Inference",
+  "Causality: Models, Reasoning, and Inference",
+  "Causes and Counterfactuals: Concepts, Principles and Tools",
+  "R-320-part1.pdf",
+  "AnIntroductiontoPropensityScore",
+  "Causation and Decision"
+]
+
 const generativeSummary = "Generative Summary"
 const generativeRecommendations = "File Recommendations"
 
@@ -35,6 +44,8 @@ const SummaryBox = ({updateUrl}) => {
 
   const [buttonText, setButtonText] = useState(showRecommendations);
 
+  const [rec, setRec] = useState(recommendations);
+
   const updateSummary = (newItems) => {
     setSummaryItems(newItems)
   }
@@ -43,6 +54,7 @@ const SummaryBox = ({updateUrl}) => {
     setShowRec(false)
     setTitle(generativeSummary)
     setButtonText(showRecommendations)
+    setRec(recommendations2)
   }
 
   const handleAsk = () => {
@@ -55,6 +67,7 @@ const SummaryBox = ({updateUrl}) => {
       // setSummaryItems(preState => recommendations)
       setTitle(() => generativeRecommendations)
       setButtonText(() => showSummary)
+      setRec(rec)
     }
     setShowRec(preState => !preState)
   }
@@ -66,7 +79,7 @@ const SummaryBox = ({updateUrl}) => {
       </h2>
       {showRec && 
         <RecTable 
-          data={recommendations} 
+          data={rec}
           updateUrl={updateUrl} 
           updateSummaryItems={updateSummary}
           backToSummary={backToSummary}
